@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+section {
+    padding-bottom: 0;
+}
+
+#contactContentArea {}
+
+.comment {
+    display: block;
+    position: relative;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #E7404C;
+}
+
+#contactContent {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactIconBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
+.contactIcon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 280px;
+    height: 200px;
+    text-decoration: none;
+}
+
+.icon {
+    width: 120px;
+    margin: auto;
+    transition: all 300ms ease;
+    /*トランジション（どの要素をアニメートするか）（時間）（遅延時間）（ease）*/
+}
+
+.icon:hover {
+    width: 140px;
+}
+
+.iconText {
+    width: 100%;
+    margin: auto;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #E7404C;
+}
+
+@media screen and ( max-width:768px) {
+
+    #contactContent {
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 60vh;
+    }
+
+    .contactIcon{
+        height: 120px;
+    }
+    
+    .icon {
+        width: 64px;
+    }
+    .icon:hover{
+        width: 64px;
+    }
+}
