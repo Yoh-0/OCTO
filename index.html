@@ -13,7 +13,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-107747249-1');
-
     </script>
 
     <meta charset="UTF-8">
@@ -27,7 +26,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/reset.css"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/Template.js"></script>
@@ -39,25 +37,43 @@
 
 <body>
 
-    <header></header>
+    <header id="header"></header>
 
+
+
+    <!--TOP-->
     <a href="index.html#top">
         <div id="returnSwitch">
             <div></div>
         </div>
     </a>
+    <!-------------->
+    <!--<div id="popShade"></div>
 
-    <!--TOP-->
-    <a id="top">
-        <section class="homeSection">
-            <div class="contentArea">
-                <img id="topLogo" src="img/logo.svg">
+    <div id="popupContainer">
+        <a href="#" id="popupClose">
+            <div id="pCl"></div>
+            <div id="pCr"></div>
+        </a>
+        <a href="http://design-team-octo.com/apresent/" target="_blank">
+            <div id="popupWin">
+                <p id="popupButton">Click Here!!</p>
             </div>
+        </a>
+    </div>-->
+    <!------↑-popupWin---------->
 
-        </section>
-    </a>
-    <!--ABOUT-->
     <section id="topSection" class="homeSection">
+
+        <div class="contentArea">
+<!--            <img id="topLogo" src="img/logo.svg">-->
+            <img id="topLogo" src="img/new_year_logo.svg">
+        </div>
+
+    </section>
+
+    <!--ABOUT-->
+    <section class="homeSection">
         <div id="aboutContentArea" class="contentArea">
             <h2>What's OCTO??</h2>
 
@@ -68,22 +84,22 @@
                     <p class="aboutItemDescription">OCTOは東京工科大学６期生８名によって結成された、デザインについて<span>考え、</span><span>共有し、</span>発信する<span>学生団体です。</span><span>2017年8月8日結成</span></p>
                 </div>
                 <div class="aboutItem">
-                    <h3 class="aboutItemTitle">・チームコンセプト・</h3>
+                    <h3 class="aboutItemTitle">・Team Concept・</h3>
                     <img class="aboutIllust" src="img/aboutIllustConcept.svg">
                     <p class="aboutItemDescription">「デザインを愉しむ」をチームコンセプトに掲げ活動しています。<span>デザインの価値は様々で</span>価値観の数だけ捉え方があります。OCTOはそんな「デザインを様々な角度から<span>五感で感じる場」です。</span></p>
                 </div>
                 <div class="aboutItem">
-                    <h3 class="aboutItemTitle">・研究内容・</h3>
+                    <h3 class="aboutItemTitle">・Study Contents・</h3>
                     <img class="aboutIllust" src="img/aboutIllustStudy.svg">
                     <p class="aboutItemDescription">デザインと社会の繋がりを等身大(学生)の目線で模索していきます。 学生だからこそ出来る自由な発想で、効果的に発信していきます。<span>例）展示・映像・意見広告・季刊誌　など</span></p>
                 </div>
                 <div class="aboutItem">
-                    <h3 class="aboutItemTitle">・デザインとは・</h3>
+                    <h3 class="aboutItemTitle">・What's Our Design・</h3>
                     <img class="aboutIllust" src="img/aboutIllustDesign.svg">
                     <p class="aboutItemDescription">一般的にデザインとは「意匠」や「図案」<span>といった意味があります。</span>OCTOが考えるデザインは、<span>様々な魅力を秘めており、</span><span>人々を豊かにする力を持っていると考えます。</span></p>
                 </div>
                 <div class="aboutItem">
-                    <h3 class="aboutItemTitle">・設立背景・</h3>
+                    <h3 class="aboutItemTitle">・Our Background・</h3>
                     <img class="aboutIllust" src="img/aboutIllustBg.svg">
                     <p class="aboutItemDescription">デザインに魅了されてしまった我々は
                         <span>「みんなにデザインの面白さを伝えたい」</span><span>「興味を持って欲しい」</span><span>と思うようになりました。</span>しかし、一人一人の活動でそれを伝えていくのは学生の身分上限界があると感じ、結成に至りました。</p>
@@ -146,7 +162,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>視覚コース </span><span>視覚専攻</span>
                             <br><span>企画補佐</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
 
             </div>
@@ -159,7 +178,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>視覚コース </span><span>視覚専攻</span>
                             <br><span>企画</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -171,7 +193,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>工業コース </span><span>工業専攻</span>
                             <br><span>マネージャー</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -183,7 +208,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>工業コース </span><span>空間専攻</span>
                             <br><span>副代表</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -195,7 +223,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>視覚コース </span><span>視覚専攻</span>
                             <br><span>代表</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -205,9 +236,14 @@
                     <div class="profileCardContent">
                         <img src="img/member_ogawa.jpg" alt="" class="profileCardImg">
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>視覚コース </span><span>映像専攻</span>
-                            <br><span>広報補佐</span></p>
+                            <br><span>広報補佐</span>
+                            <span><a href="http://yohsuke.html.xdomain.jp/" target="_blank" id="weburl">OGAWA YOHSUKE Website ></a></span></p>
+
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -221,7 +257,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>視覚コース </span><span>視覚専攻</span>
                             <br><span>広報</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 
@@ -234,7 +273,10 @@
                         <p class="profileCardDescription">東京工科大学 <span>デザイン学部</span><span>工業コース </span><span>工業専攻</span>
                             <br><span>会計</span></p>
                     </div>
-                    <a　href="#" class="button">×</a>
+                    <a　href="#" class="button">
+                        <div id="l"></div>
+                        <div id="r"></div>
+                        </a>
                 </div>
             </div>
 

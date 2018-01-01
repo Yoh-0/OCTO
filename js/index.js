@@ -56,3 +56,13 @@ $(function () {
         $("#arataModal, #shade, .profileModalWin").fadeOut();
     });
 });
+/*
+$(function(){
+    $("#popShade").delay(400).fadeIn();
+    $("#popupContainer").delay(400).fadeIn(500);
+    
+    $("#popShade, #popupClose").on("click", function(){
+        $("#popupContainer, #popShade").fadeOut();
+    });
+});
+*/

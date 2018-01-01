@@ -1,0 +1,16 @@
+<Files ~ "\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ 
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://design-team-octo.com/$1 [R=301,L]
+
+AddType image/svg+xml .svg
+AddType image/svg+xml .svgz
+
+AddEncoding gzip .svgz
+#####mime#####
+AddType image/svg+xml .svg
+AddType image/svg+xml .svgz
+#####end:mime#####
