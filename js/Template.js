@@ -1,3 +1,4 @@
+@grobal
 $(function () {
     $("header").load("header.html");
     
