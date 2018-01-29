@@ -3,12 +3,17 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-between;
   width: 100vw;
+  height: 100vh;
+  /*要検討*/
   margin-top: 100px;
   color: #333333;
   font-family: "europa", "a-otf-gothic-bbb-pr6n", "a-otf-midashi-go-mb31-pr6n", sans-serif;
+}
+
+span {
+  display: inline-block;
 }
 
 header {
@@ -17,6 +22,7 @@ header {
   left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100px;
   background: #fff;
@@ -30,14 +36,27 @@ header {
   align-items: center;
   width: 72vw;
   /*  width: 1200px;*/
-  /*  width: 1400px;*/
-  height: 120px;
+  height: 100px;
+}
+
+.logo-box-pc {
+  display: block;
 }
 
 .header-logo {
   display: block;
   width: auto;
   height: 32px;
+}
+
+.logo-box-sp {
+  display: none;
+}
+
+.logo-small {
+  display: block;
+  width: auto;
+  height: 48px;
 }
 
 .grobal-nav {
@@ -50,7 +69,7 @@ header {
 
 .grobal-nav li {
   margin-right: 2.4vw;
-  /*  margin-right: 60px;*/
+  /*  margin-right: 10px;*/
   list-style: none;
 }
 
@@ -82,8 +101,8 @@ header {
 }
 
 .wrapper {
+  display: flex;
   width: 72vw;
-  /*  width: 1200px;*/
   height: auto;
   margin: auto;
   padding-top: 20px;
@@ -97,9 +116,11 @@ header {
 
 .main-content {
   width: 100%;
+  height: auto;
 }
 
 .card {
+  display: block;
   height: auto;
   padding: 4.6vw 4vw;
   border-radius: 20px;
@@ -208,7 +229,7 @@ footer {
   transition: 0.25s cubic-bezier(.33, 0, .11, .99);
 }
 
-.footer-contact img:hover{
+.footer-contact img:hover {
   transform: scale(1.1);
 }
 
@@ -216,4 +237,16 @@ footer {
   align-self: center;
   margin-bottom: 10px;
   font-size: 0.8em;
+}
+
+@media screen and (max-width:1000px) {
+
+  .logo-box-pc {
+    display: none;
+  }
+
+  .logo-box-sp {
+    display: block;
+  }
+
 }
