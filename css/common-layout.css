@@ -129,11 +129,10 @@ header {
   max-width: 50vw;
 }
 
-#nav-content .nav-close-btn {
-  /*  align-self: flex-end;*/
+.nav-close-btn img {
   display: block;
   position: relative;
-  top: -70px;
+  top: 50px;
   /*  left: -50px;*/
   /*  width: 30px;*/
   height: 30px;
