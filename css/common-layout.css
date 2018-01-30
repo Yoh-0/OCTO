@@ -46,7 +46,7 @@ header {
 .header-logo {
   display: block;
   width: auto;
-  height: 32px;
+  height: 30px;
 }
 
 .logo-box-sp {
@@ -119,7 +119,7 @@ header {
   list-style: none;
   text-align: center;
   color: #E8404D;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -129,10 +129,10 @@ header {
   max-width: 50vw;
 }
 
-.nav-close-btn img{
+.nav-close-btn img {
   display: block;
   position: relative;
-  top: 50px;
+  top: 4vw;
   /*  left: -50px;*/
   /*  width: 30px;*/
   height: 30px;
@@ -161,7 +161,6 @@ header {
 
 .grobal-nav li {
   margin-right: 2.4vw;
-  /*  margin-right: 10px;*/
   list-style: none;
 }
 
@@ -178,7 +177,6 @@ header {
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(231, 64, 76, 1) 50%);
   background-position: 0 0;
-  /*  background-size: 200% auto;*/
   background-size: 202% auto;
   transition: 0.25s cubic-bezier(.33, 0, .11, .99);
 }
@@ -200,6 +198,10 @@ header {
   padding-top: 20px;
 }
 
+.section {
+  margin-top: 40px;
+}
+
 .content-box {
   display: flex;
   flex-direction: row;
@@ -207,6 +209,7 @@ header {
 }
 
 .main-content {
+  flex-shrink: 1;
   width: 100%;
   height: auto;
 }
@@ -222,13 +225,15 @@ header {
 }
 
 .sidebar {
-  flex-shrink: 3;
   display: flex;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 200px;
-  margin-left: 4vw;
+  min-width: 8em;
+  width: auto;
+  min-height: 100px;
+  height: auto;
+  max-height: 320px;
+  padding: 4.6vw 40px 4.6vw 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -237,12 +242,14 @@ header {
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  margin-left: 4vw;
+  margin: 0 auto;
 }
 
 .sidebar ul li {
+  display: block;
   border-bottom: solid 2px transparent;
   margin: 0 0 16px 0;
+  list-style: none;
   color: #E8404D;
 }
 
@@ -277,7 +284,7 @@ h2 {
 .sentence {
   margin-bottom: 40px;
   font-family: "a-otf-gothic-bbb-pr6n";
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 100;
   letter-spacing: 0.2em;
   line-height: 2em;
@@ -305,8 +312,8 @@ footer {
   height: 200px;
 }
 
-.footer-logo {
-  width: 2em;
+.footer-logo img {
+  height: 60px;
 }
 
 .footer-nav {
@@ -319,7 +326,6 @@ footer {
 
 .footer-nav li {
   margin-right: 2.4vw;
-  /*  margin-right: 10px;*/
   list-style: none;
   color: #E8404D;
   font-weight: bold;
@@ -328,7 +334,8 @@ footer {
 .footer-contact {
   display: flex;
   justify-content: space-between;
-  width: 16vw;
+  max-width: 16vw;
+  min-width: 200px;
 }
 
 .footer-contact img {
@@ -369,9 +376,27 @@ footer {
     display: none;
   }
 
+  .content-box {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    order: 2;
+  }
+  
+  .sidebar{
+    order: 0;
+    margin-left: 0;
+  }
+
 }
 
 @media screen and (max-width:768px) {
+
+  header {
+    height: 80px;
+  }
+
   .logo-box-pc {
     display: none;
   }
@@ -383,11 +408,23 @@ footer {
   .sentence {
     margin-top: 40px;
     font-size: ;
-/*    font-size: 0.8em;*/
+    /*    font-size: 0.8em;*/
     line-height: 1.6em;
   }
 
+  .sidebar{
+    padding: 40px;
+  }
+  
   .footer-wrapper {
     flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-top: 40px;
+  }
+
+  .footer-nav {
+    display: none;
   }
 }
