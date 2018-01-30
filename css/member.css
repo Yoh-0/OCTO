@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.card {
+  display: flex;
+}
+
+.member-img {
+  max-height: 16em;
+  border-radius: 150px;
+  margin-right: 40px;
+}
+
+h1 p {
+  font-weight: 100;
+}
+
+.name {
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+.member-sentence {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.speciality {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  letter-spacing: 75;
+}
+
+.sidebar {}
+
+
+@media screen and (max-width:768px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  .member-img{
+    margin: auto;
+  }
+}

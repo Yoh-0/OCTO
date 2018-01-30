@@ -6,13 +6,11 @@
   background-size: cover;
 }
 
-.about-section {
-  margin-top: 40px;
-}
 
 #about-member-list {
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
+  ;
 }
 
 #about-member-list ul {
@@ -40,4 +38,7 @@
 
 #about-member-list a:hover::after {
   width: 100%;
+}
+
+.sidebar {
 }
