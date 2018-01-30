@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   /*要検討*/
   margin-top: 100px;
   color: #333333;
@@ -93,6 +93,7 @@ header {
 
 #nav-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: auto;
@@ -114,25 +115,30 @@ header {
 }
 
 #nav-content ul li {
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   list-style: none;
   text-align: center;
   color: #E8404D;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 #nav-content ul li img {
   height: 3em;
   max-width: 50vw;
 }
-#nav-content .nav-close-btn{
+
+#nav-content .nav-close-btn {
+  /*  align-self: flex-end;*/
   display: block;
   position: relative;
-  width: 100vw;
-  height: 40px;
-  background: blue;
+  top: -70px;
+  /*  left: -50px;*/
+  /*  width: 30px;*/
+  height: 30px;
 }
+
 /*チェックが入ったらもろもろ表示*/
 
 #nav-input:checked ~ #nav-close {
@@ -312,7 +318,7 @@ footer {
   font-weight: bold;
 }
 
-.footer-nav li{
+.footer-nav li {
   margin-right: 2.4vw;
   /*  margin-right: 10px;*/
   list-style: none;
@@ -364,12 +370,6 @@ footer {
     display: none;
   }
 
-  .sentence {
-    margin-top: 40px;
-    font-size: 0.8em;
-    line-height: 1.6em;
-  }
-
 }
 
 @media screen and (max-width:768px) {
@@ -379,6 +379,13 @@ footer {
 
   .logo-box-sp {
     display: block;
+  }
+
+  .sentence {
+    margin-top: 40px;
+    font-size: ;
+/*    font-size: 0.8em;*/
+    line-height: 1.6em;
   }
 
   .footer-wrapper {
