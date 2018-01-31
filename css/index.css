@@ -11,13 +11,19 @@
 
 #top-bg {
   position: absolute;
+  top: 80px;
   width: 100vw;
-  min-height: 100%;
-  background: url(../img/group-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  min-height: 95%;
+    background: url(../img/group-bg.jpg);
+/*  background: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0)), url(../img/group-bg.jpg);*/
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
   z-index: -10;
+}
+
+#index-wrapper {
+  margin-top: 0;
 }
 
 .top-section {
@@ -127,4 +133,16 @@
 .news-list-item img {
   width: 100px;
   height: 100px;
+}
+
+@media screen and (max-width:768px) {
+  #top-bg {
+    min-height: 80%;
+    /*
+    background: url(../img/group-bg.jpg), linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0));
+    background-size: contain;
+    background-position: bottom;
+*/
+    background-repeat: no-repeat;
+  }
 }

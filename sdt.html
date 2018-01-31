@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107747249-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107747249-1');
+  </script>
+
+  <!-- typekit -->
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'zpg4ruy',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="description" content="学生による Design Team OCTO のウェブサイトです。">
+
+  <link rel="icon" type="image/png" href="img/octo.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common-layout.css">
+  <link rel="stylesheet" href="css/sdt.css">
+  <!--ページごとにリンク張って-->
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/common-layout.js"></script>
+
+  <title>SDT | Design Team OCTO Website</title>
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="wrapper">
+
+    <section class="section">
+
+      <h1>SDT</h1>
+      
+      <div class="content-box">
+        <article class="main-content">
+
+            <section class="card">
+              <h1>SDT (Seamless Design Thinking)</h1>
+              <p class="sentence">
+                「シームレスなデザイン思考でモノやコトの可能性を広げる」というチームコンセプトに直結した、Design Team OCTOのメインプログラムです。大きく4段階に分かれた一連のフローを順番にクリアしていくことで1つのデザインアプローチを提案します。
+              </p>
+              
+              <img id="sdt-flow" src="img/sdt-flow.png" alt="">
+              
+              <p class="sentence">
+                僕らの重視している問題点の中に、「デザイン職の細分化」が挙げられます。それをクリアするための研究課題としてこの活動プログラムがあります。<br> 「問題点や、それを解決するアイデアが先行した上でのデザイン分野の選定」という形が「シームレスなデザイン思考」です。。それによって視野がより拡がり、モノやコト、ヒト、行為の新たな価値や魅力の発見につながります。OCTOの中での知見を拡げ、各々の活動、デザインワークに活かしていくことがねらいであり、最終的に誰が見てもわかるコンセプトボードにまとめることで、提案力育成とプロジェクトの枠組みとしての目標としています。
+                <br> この活動を皆さんの目に触れる形で提案することで、結果的にモノやコト、ヒト、行為の可能性を拡げることができるのではないでしょうか。そして「シームレスなデザイン思考」によりデザインそもそもの可能性さえも拡げることが可能であると考えます。
+              </p>
+            </section>
+
+        </article>
+        <!--
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#｛ジャンプ先｝">｛その都度入力｝</a></li>
+          <li><a href="#｛ジャンプ先｝">｛その都度入力｝</a></li>
+          <li><a href="#｛ジャンプ先｝">｛その都度入力｝</a></li>
+        </ul>
+      </aside>
+      -->
+
+      </div>
+    </section>
+  </div>
+  <footer id="footer"></footer>
+</body>
+</html>
