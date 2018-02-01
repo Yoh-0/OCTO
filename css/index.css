@@ -12,10 +12,11 @@
 #top-bg {
   position: absolute;
   top: 80px;
+  left: 0;
   width: 100vw;
   min-height: 95%;
-    background: url(../img/group-bg.jpg);
-/*  background: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0)), url(../img/group-bg.jpg);*/
+  background: url(../img/group-bg.jpg);
+  /*  background: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0)), url(../img/group-bg.jpg);*/
   background-size: cover, contain;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom;
@@ -23,6 +24,7 @@
 }
 
 #index-wrapper {
+  display: inline-block;
   margin-top: 0;
 }
 
@@ -35,11 +37,13 @@
 }
 
 #home-title-1 {
+  display: inline-block;
   margin-top: 4vw;
   margin-bottom: 10px;
 }
 
 #home-title-2 {
+  display: inline-block;
   margin-top: -10px;
   margin-bottom: -20px;
   font-size: 4.2vmax;
@@ -137,12 +141,11 @@
 
 @media screen and (max-width:768px) {
   #top-bg {
-    min-height: 80%;
-    /*
-    background: url(../img/group-bg.jpg), linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0));
+    min-height: 74%;
+/*    min-height: 80%;*/
+    background: linear-gradient(to bottom, #fff 50%, rgba(0, 0, 0, 0) 70%),  url(../img/group-bg.jpg);
     background-size: contain;
     background-position: bottom;
-*/
     background-repeat: no-repeat;
   }
 }

@@ -31,25 +31,24 @@
   height: 6em;
 }
 
-.icon-text{
-  
-}
-
 @media screen and (max-width:768px) {
-  
-  .content-box{
-    margin-top: -60px;
+
+  .content-box {
+    margin-top: -20px;
   }
-  
+
   #contact-main-content {
     flex-direction: column;
   }
-  
-  .contact-icon-box{
+
+  .contact-icon-box {
     width: auto;
   }
-  
-  .contact-icon{
+
+  .contact-icon {
     height: 4em;
+  }
+
+  .icon-text {
   }
 }

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#twitter-img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#twitter-sidebar {
+  max-height: none;
+  padding: 4.6vw 40px;
+}
+
+.twitter-timeline {
+  display: block;
+}

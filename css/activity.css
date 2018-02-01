@@ -19,8 +19,13 @@
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
+.activity-card .card .sentence,
+h1 {
+  background: rgba(255, 255, 255, 1);
+}
+
 .activity-card .card h1 {
-  color:
+  line-height: 0.68em;
 }
 
 #sdt,
@@ -50,19 +55,26 @@
   background: url(../img/shinbun-card-img.jpeg);
 }
 
+#twit .card {
+  background: url(../img/twitter-card-img.jpeg);
+}
+
 #sdt .card,
-#shin .card {
+#shin .card,
+#twit .card {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
   z-index: 0;
-  color: #fff;
+  color: #000000;
+  /*    color: #fff;*/
 }
 
 #sdt .card::before,
-#shin .card::before {
+#shin .card::before,
+#twit .card::before {
   content: "";
   position: absolute;
   /*絶対位置を指定したらうまく行った*/
@@ -72,33 +84,8 @@
   left: -5px;
   z-index: -1;
   background: inherit;
-  filter: blur(5px) brightness(0.5);
+  filter: blur(5px) brightness(1.1);
 }
-
-/*
-.activity-card .card h1 {
-  color: #E8404D;
-}
-*/
-
-/*
-#sdt,
-#shin,
-#kawara,
-#twit,
-#works {
-  flex-basis: 100%;
-}
-
-#sdt,
-#shin {
-  flex-shrink: 2;
-}
-
-#kawara,
-#twit {
-  flex-shrink: 1;
-}*/
 
 @media screen and (max-width:768px) {
   #sdt,
@@ -114,4 +101,10 @@
     margin-right: 0;
   }
 
+}
+
+@media screen and (max-width:768px) {
+  .activity-card .card h1 {
+    height: 0.68em;
+  }
 }

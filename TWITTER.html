@@ -54,8 +54,9 @@
   <link rel="icon" type="image/png" href="img/octo.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common-layout.css">
-  <link rel="stylesheet" href="css/"><!--ページごとにリンク張って-->
-  
+  <link rel="stylesheet" href="css/twitter.css">
+  <!--ページごとにリンク張って-->
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/common-layout.js"></script>
 
@@ -66,45 +67,34 @@
 <body>
   <header id="header"></header>
   <div class="wrapper">
-    <section>
-    <h1>TWITTER</h1>
-    <div class="content-box">
-      <article class="main-content">
-        <section class="main-content">
-         
-	   
+    <section class="section">
+
+      <h1>TWITTER</h1>
+
+      <div class="content-box">
+        <article class="main-content">
+
           <section class="card">
-          <h1>OCTOのツイート</h1>
-          <p class="sentence">
-            メンバーがほぼ毎日、身近なデザインを紹介しています。
-          </p>
+            <h1>OCTOのツイート</h1>
+            <p class="sentence">
+              メンバーがほぼ毎日、身近なデザインを紹介しています。
+              <img id="twitter-img" src="img/twitter-card-img.jpeg">
+            </p>
           </section>
-			
-		<!--	
-          <section class="card">
-          <h1>｛見出し｝</h1>
-          <p class="sentence">
-            ｛文章｝
-          </p>
-          </section>
-          <section class="card">
-          <h1>｛見出し｝</h1>
-          <p class="sentence">
-            ｛文章｝
-          </p>
-          </section>
-       -->
-          
-        </section>
-        
-      </article>
-      
-	 
-      <aside class="sidebar">
-       
-      </aside>
-      
-    </div>
+
+        </article>
+
+        <aside class="sidebar" id="twitter-sidebar">
+          <a class="twitter-timeline" 
+          width="" height="800px" 
+          data-chrome=”noheader” data-chrome=”noscrollbar” 
+          data-border-color=”#333333” 
+          data-theme=”dark” 
+          href="https://twitter.com/________OCTO?ref_src=twsrc%5Etfw">Tweets by ________OCTO</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+
+      </div>
     </section>
   </div>
   <footer id="footer"></footer>
