@@ -2,7 +2,6 @@
 
 #contact-wrapper {
   flex-direction: column;
-  justify-content: center;
   height: auto;
 }
 
@@ -50,5 +49,6 @@
   }
 
   .icon-text {
+    display: none
   }
 }

@@ -175,9 +175,9 @@ header {
   border-radius: 100px;
   color: #E8404D;
   text-decoration: none;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(231, 64, 76, 1) 50%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(231, 64, 76, 1) 50%);
   background-position: 0 0;
-  background-size: 202% auto;
+  background-size: 201% auto;
   transition: 0.25s cubic-bezier(.33, 0, .11, .99);
 }
 
@@ -191,6 +191,7 @@ header {
 }
 
 .wrapper {
+  flex-grow: 1;
   display: flex;
   width: 72vw;
   height: auto;
@@ -214,6 +215,12 @@ header {
   height: auto;
 }
 
+.link-spacer {
+  position: relative;
+  display: block;
+  top: -100;
+}
+
 .card {
   display: block;
   width: auto;
@@ -224,6 +231,8 @@ header {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/*サイドバー関連*/
 
 .sidebar {
   display: flex;
@@ -279,6 +288,7 @@ h1 {
 
 h2 {
   font-size: 1.6em;
+  letter-spacing: 0.1em;
 }
 
 /*↓文章系に共通*/
@@ -288,8 +298,15 @@ h2 {
   font-family: "a-otf-gothic-bbb-pr6n";
   font-size: 1em;
   font-weight: 100;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   line-height: 2em;
+}
+
+.restart{
+  float: right;
+  font-family: "europa";
+  font-weight: 100;
+  font-size: 0.8em;
 }
 
 a {
@@ -300,7 +317,6 @@ a {
 footer {
   display: flex;
   flex-direction: column;
-  /*  margin-top: 80px;*/
   background: #fff;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -311,7 +327,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 72vw;
-  height: 200px;
+  max-height: 200px;
+  padding: 40px 0 20px 0;
 }
 
 .footer-logo img {
@@ -360,11 +377,9 @@ footer {
 
   .logo-box-pc {
     display: block;
-    /*    display: none;*/
   }
 
   .logo-box-sp {
-    /*    display: block;*/
     display: none;
   }
 
@@ -426,7 +441,7 @@ footer {
   }
 
   .footer-logo {
-    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-nav {

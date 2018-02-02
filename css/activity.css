@@ -19,14 +19,15 @@
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
-.activity-card .card .sentence,
-h1 {
-  background: rgba(255, 255, 255, 1);
-}
-
 .activity-card .card h1 {
   line-height: 0.68em;
 }
+
+.activity-card .card .sentence,
+h1 {
+  /*  background: rgba(255, 255, 255, 1);*/
+}
+
 
 #sdt,
 #shin {
@@ -59,6 +60,19 @@ h1 {
   background: url(../img/twitter-card-img.jpeg);
 }
 
+
+#sdt .card h1,
+#shin .card h1,
+#twit .card h1 {
+  filter: drop-shadow(4px 2px 12px rgba(0, 0, 0, 1));
+}
+
+#sdt .card .sentence,
+#shin .card .sentence,
+#twit .card .sentence {
+  filter: drop-shadow(4px 2px 5px rgba(0, 0, 0, 1));
+}
+
 #sdt .card,
 #shin .card,
 #twit .card {
@@ -68,8 +82,8 @@ h1 {
   background-position: center center;
   overflow: hidden;
   z-index: 0;
-  color: #000000;
-  /*    color: #fff;*/
+  /*  color: #000000;*/
+  color: #fff;
 }
 
 #sdt .card::before,
