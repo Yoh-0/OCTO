@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+#activity-main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.activity-card .card {
+  height: 200px;
+  margin: 20px 0;
+  background: none;
+  transition: 0.25s;
+  transform: scale(1);
+}
+
+.activity-card .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card .card h1 {
+  line-height: 0.68em;
+}
+
+.activity-card .card .sentence,
+h1 {
+  /*  background: rgba(255, 255, 255, 1);*/
+}
+
+
+#sdt,
+#shin {
+  flex-basis: 59%;
+}
+
+#kawara,
+#twit {
+  flex-basis: 39%;
+}
+
+#works {
+  flex-basis: 100%;
+}
+
+#sdt,
+#twit {
+  margin-right: 2%;
+}
+
+#sdt .card {
+  background: url(../img/sdt-card-img.jpeg);
+}
+
+#shin .card {
+  background: url(../img/shinbun-card-img.jpeg);
+}
+
+#twit .card {
+  background: url(../img/twitter-card-img.jpeg);
+}
+
+
+#sdt .card h1,
+#shin .card h1,
+#twit .card h1 {
+  filter: drop-shadow(4px 2px 12px rgba(0, 0, 0, 1));
+}
+
+#sdt .card .sentence,
+#shin .card .sentence,
+#twit .card .sentence {
+  filter: drop-shadow(4px 2px 5px rgba(0, 0, 0, 1));
+}
+
+#sdt .card,
+#shin .card,
+#twit .card {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  z-index: 0;
+  /*  color: #000000;*/
+  color: #fff;
+}
+
+#sdt .card::before,
+#shin .card::before,
+#twit .card::before {
+  content: "";
+  position: absolute;
+  /*絶対位置を指定したらうまく行った*/
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: inherit;
+  filter: blur(5px) brightness(1.1);
+}
+
+@media screen and (max-width:768px) {
+  #sdt,
+  #shin,
+  #kawara,
+  #twit,
+  #works {
+    flex-basis: 100%;
+  }
+
+  #sdt,
+  #twit {
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .activity-card .card h1 {
+    height: 0.68em;
+  }
+}

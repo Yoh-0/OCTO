@@ -6,6 +6,10 @@
   background-size: cover;
 }
 
+#consept-sentence{
+  font-size: 1.4em;
+}
+
 
 #about-member-list {
   display: flex;
