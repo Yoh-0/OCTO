@@ -218,7 +218,7 @@ header {
 .link-spacer {
   position: relative;
   display: block;
-  top: -100;
+  top: -150px;
 }
 
 .card {
