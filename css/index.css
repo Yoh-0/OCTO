@@ -142,10 +142,24 @@
 
   #top-bg {
     bottom: 400px;
-    background: linear-gradient(to bottom, #fff 30%, rgba(0, 0, 0, 0) 60%), url(../img/group-bg.jpg);
+    background: linear-gradient(to bottom, #fff 30%, rgba(255, 255, 255, 0) 60%), url(../img/group-bg.jpg);
     background-position: top center, bottom 150px center;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
+  }
+
+
+  #top-button {
+    align-self: center;
+    border: solid 3px #E8404D;
+  }
+
+  #top-button:hover {
+    background-position: 0 0;
+  }
+
+  #top-button p {
+    font-size: 1em;
   }
 
 }
