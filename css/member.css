@@ -5,9 +5,16 @@
 }
 
 .member-img {
-  max-height: 16em;
-  border-radius: 150px;
+  display: block;
+  max-width: 32%;
   margin-right: 40px;
+}
+
+.member-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 h1 p {
@@ -27,19 +34,55 @@ h1 p {
 
 .speciality {
   font-size: 0.8em;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   letter-spacing: 75;
 }
 
 .sidebar {}
 
+@media screen and (max-width:1024px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
 
 @media screen and (max-width:768px) {
+
   .card {
     flex-direction: column;
+    width: 100%;
   }
-  
-  .member-img{
-    margin: auto;
+
+  .member-img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .member-img > img {}
+
+  .name {
+    margin-top: -2em;
+    /*    margin-top: 20px;*/
+    margin-bottom: 1.2em;
+    font-size: 1.2em;
+  }
+
+  .speciality {
+    margin-bottom: -2em;
+  }
+
+  .sidebar ul {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sidebar ul li {
+    width: 5em;
   }
 }

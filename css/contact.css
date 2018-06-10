@@ -12,6 +12,7 @@
 
 #contact-main-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -28,6 +29,12 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 6em;
+}
+
+@media screen and (max-width:1024px) {
+  #contact-main-content {
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -49,6 +56,6 @@
   }
 
   .icon-text {
-    display: none
+    display: none;
   }
 }

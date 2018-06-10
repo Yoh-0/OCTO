@@ -46,3 +46,10 @@
 
 .sidebar {
 }
+
+@media screen and (max-width:768px) {
+  #about-member-list a:hover::after {
+  width: 0;
+}
+
+}
