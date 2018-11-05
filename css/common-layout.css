@@ -50,12 +50,14 @@ header {
 
 .logo-box-sp {
   display: none;
+  height: 20px;
 }
 
 .logo-small {
   display: block;
   width: auto;
-  height: 40px;
+  height: 100%;
+/*  height: 40px;*/
 }
 
 /*ハンバーガーメニュー設定*/
@@ -74,7 +76,7 @@ header {
 }
 
 #nav-open > img {
-  height: 24px;
+  height: 18px;
 }
 
 #nav-close {
@@ -142,14 +144,14 @@ header {
 }
 
 .nav-close-btn {
-  position: absolute;
+  position: relative;
   padding-right: 30px;
 }
 
 .nav-close-btn img {
   display: block;
   position: relative;
-  height: 26px;
+  height: 18px;
 }
 
 /*チェックが入ったらもろもろ表示*/
@@ -185,8 +187,6 @@ header {
 }
 
 .grobal-nav li a {
-  width: ;
-  height: ;
   padding: 1px 16px 3px 16px;
   border-radius: 100px;
   color: #E8404D;
@@ -451,7 +451,7 @@ footer {
   }
 
   header {
-    height: 80px;
+    height: 40px;
   }
 
   .logo-box-pc {

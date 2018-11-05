@@ -8,9 +8,12 @@
   height: auto;
 }
 
-.activity-card {}
+.activity-card {
+  width: 100%;
+}
 
 .activity-card .card {
+  max-width: 100%;
   height: 200px;
   margin: 20px 0;
   background: #fff;
@@ -66,6 +69,10 @@ h1 {}
   background: url(../img/twitter-card-img.jpeg);
 }
 
+#works .card {
+  background: url(../img/works-card-img.JPG);
+}
+
 
 #sdt .card h1,
 #shin .card h1,
@@ -77,14 +84,16 @@ h1 {}
 #sdt .card .sentence,
 #shin .card .sentence,
 #twit .card .sentence,
-#kawara .card .sentence {
+#kawara .card .sentence,
+#works .card .sentence {
   filter: drop-shadow(4px 2px 5px rgba(65, 5, 5, 0.3));
 }
 
 #sdt .card,
 #shin .card,
 #twit .card,
-#kawara .card {
+#kawara .card,
+#works .card {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,7 +106,8 @@ h1 {}
 #sdt .card::before,
 #shin .card::before,
 #twit .card::before,
-#kawara .card::before {
+#kawara .card::before,
+#works .card::before{
   content: "";
   position: absolute;
   /*絶対位置を指定したらうまく行った*/
